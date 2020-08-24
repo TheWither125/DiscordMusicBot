@@ -33,7 +33,7 @@ client.on('message', async message => {
         .on('error', error => {
             console.log(error)
         })
-        dispatcher.setVolumeLogarithmics(5 / 5)
+        dispatcher.setVolumeLogarithmic(5 / 5)
     } else if(message.content.startsWith('${PREFIX}stop')) {
         if(!message.member.voice.channel) return message.channel.send("You need to be in voice channel to stop the music")
         message.member.voice.channel.leave()
